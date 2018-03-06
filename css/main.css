@@ -79,6 +79,14 @@ body {
 	color: #737373;
 }
 
+#wrap
+{
+    width:912px;
+    margin:0 0 0 0;
+    background:#fff;
+        visibility: hidden;
+}
+
 /**
  * links
  * -
