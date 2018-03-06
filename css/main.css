@@ -97,7 +97,7 @@ a:hover, a:focus {
  * -
  */
 
-h1, h2, h3, h4, h5, h6, h7, .h01, .h02, .h03, .h04, .h05, .h06, .h07 {
+h1, h2, h3, h4, h5, h6, h7, h8, .h01, .h02, .h03, .h04, .h05, .h06, .h07, .h08 {
 	font-family: "raleway-bold", sans-serif;
 	color: #252525;
 	font-style: normal;
@@ -151,6 +151,12 @@ h6, .h06 {
 
 h7, .h07 {
 	font-size: 3.1rem;
+	line-height: 1.35;
+	letter-spacing: -.1rem;
+}
+
+h8, .h08 {
+	font-size: 2.3rem;
 	line-height: 1.35;
 	letter-spacing: -.1rem;
 }
@@ -900,7 +906,7 @@ a.menu-toggle {
 /* main-nav-wrap */
 #main-nav-wrap {
 	font-family: "raleway-heavy", sans-serif;
-	font-size: 11.5px;
+	font-size: 14.5px;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	position: absolute;
@@ -1404,6 +1410,183 @@ a.menu-toggle {
 	-webkit-transform: translateY(-100%);
 	-ms-transform: translateY(-100%);
 	transform: translateY(-100%);
+}
+
+
+/**
+ * ===================================================================
+ * About section
+ *
+ * -------------------------------------------------------------------
+ */
+
+#about {
+	background: #FFFFFF;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+#about .h01 {
+	padding-bottom: 2.1rem;
+	margin-bottom: 1.6rem;
+	position: relative;
+	text-align: center;
+	color: #252525;
+}
+#about .h01::after {
+	display: block;
+	background-color: #FFE71C;
+	width: 120px;
+	height: 3px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -60px;
+}
+.about-content {
+	margin-top: 5.4rem;
+	max-width: 1020px;
+}
+.about-content .bgrid {
+	padding: 0 30px;
+}
+.about-content img {
+	width: 50%;
+	height: 50%;
+	align-content: center;
+}
+
+/**
+ * responsive:
+ * about
+ * -
+ */
+
+@media only screen and (max-width:768px) {
+	.about-content {
+		max-width: 650px;
+	}
+}
+@media only screen and (max-width:480px) {
+	.about-content .bgrid {
+		padding: 0 20px;
+	}
+}
+@media only screen and (max-width:400px) {
+	.about-content .bgrid {
+		padding: 0;
+	}
+}
+
+
+
+
+/**
+ * ===================================================================
+ * stats section
+ *
+ * -------------------------------------------------------------------
+ */
+
+#stats {
+	background: #FFE71C;
+	padding-top: 7.2rem;
+	padding-bottom: 9rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.stats-content {
+	max-width: 740px;
+	margin: 0 auto;
+}
+.stats-content h1 {
+	color: #FFFFFF;
+	margin-bottom: .6rem;
+}
+.stats-content p {
+	color: rgba(0, 0, 0, 0.8);
+}
+.stats-content .stores {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+.stats-content .stores li {
+	padding: 0;
+	display: inline-block;
+}
+.stats-content .stores li .button {
+	background: #535959;
+	color: #FFFFFF;
+	margin-right: 12px;
+	display: block;
+	line-height: 60px;
+}
+.stats-content .stores li .button:hover,
+.stats-content .stores li .button:focus {
+	background: #353a3a;
+}
+.stats-content .stores li .button i {
+	font-size: 18px;
+	line-height: inherit;
+	margin-right: 8px;
+}
+.stats-content .stores li .button i.ion-social-windows {
+	font-size: 15px;
+}
+.stats-content .stores li:last-child .button {
+	margin-right: 0;
+}
+
+.stats-content .icon {
+	display: inline-block;
+	margin-bottom: 2.1rem;
+}
+.stats-content .icon i {
+	font-size: 4.8rem;
+	color: black;
+}
+.stats-content .h05 {
+	font-size: 1.7rem;
+	line-height: 1.765;
+	color: #000000;
+	margin-bottom: 1.8rem;
+}
+
+
+/**
+ * responsive:
+ * stats
+ * -
+ */
+
+@media only screen and (max-width:650px) {
+	.stats-content {
+		max-width: 650px;
+	}
+	.stats-content .stores li {
+		display: block;
+	}
+	.stats-content .stores li .button {
+		width: 300px;
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-bottom: 1.8rem;
+	}
+	.stats-content .stores li .button::before {
+		display: none;
+	}
+}
+@media only screen and (max-width:600px) {
+	.stats-content .stores li .button {
+		width: 70%;
+	}
+}
+@media only screen and (max-width:400px) {
+	.stats-content .stores li .button {
+		width: 80%;
+	}
 }
 
 
@@ -2005,15 +2188,30 @@ a.menu-toggle {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
+#faq .h01 {
+	padding-bottom: 2.1rem;
+	margin-bottom: 3.6rem;
+	position: relative;
+	text-align: center;
+	color: #252525;
+}
+#faq .h01::after {
+	display: block;
+	background-color: #FFE71C;
+	width: 120px;
+	height: 3px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -60px;
+}
 .faq-content {
 	margin-top: 5.4rem;
 	max-width: 1020px;
 }
 .faq-content .bgrid {
 	padding: 0 30px;
-}
-.faq-content h1 {
-	font-size: 2rem;
 }
 .faq-content img {
 	width: 50%;
@@ -2084,7 +2282,6 @@ a.menu-toggle {
 	background: #FFE71C;
 	padding-top: 7.2rem;
 	padding-bottom: 9rem;
-	height: 600px;
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -2093,7 +2290,7 @@ a.menu-toggle {
 	margin: 0 auto;
 }
 .cta-content h1 {
-	color: #FFFFFF;
+	color: #000000;
 	margin-bottom: .6rem;
 }
 .cta-content p {
