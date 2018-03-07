@@ -51,6 +51,7 @@ html {
 html
 {
 	overflow:scroll;
+	zoom: 1;
 }
 @media only screen and (max-width:1024px) {
 	html {
@@ -354,7 +355,7 @@ table {
 }
 th, td {
 	padding: 1.5rem 3rem;
-	text-align: left;
+	text-align: center;
 	border-bottom: 1px solid #E8E8E8;
 }
 th {
@@ -742,7 +743,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 
 .section-intro {
-	max-width: 700px;
+	max-width: 1000px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -929,7 +930,7 @@ a.menu-toggle {
 	min-height: 66px;
 	display: inline-block;
 	width: auto;
-	text-align: left;
+	text-align: center;
 }
 .main-navigation li {
 	position: relative;
@@ -991,7 +992,7 @@ a.menu-toggle {
 	padding: 18px 7px;
 	line-height: 30px;
 	text-decoration: none;
-	text-align: left;
+	text-align: center;
 	color: #98999a;
 	position: relative;
 	-moz-transition: color 0.3s ease-in-out;
@@ -1118,7 +1119,7 @@ a.menu-toggle {
 	.main-navigation > li {
 		display: block;
 		height: auto;
-		text-align: left;
+		text-align: center;
 		border-bottom: 1px dotted rgba(200, 200, 200, 0.08);
 		padding: 0;
 	}
@@ -1438,8 +1439,8 @@ a.menu-toggle {
 	padding-bottom: 2rem;
 }
 #about .h01 {
-	padding-bottom: 2.1rem;
-	margin-bottom: 1.6rem;
+	padding-bottom: 3.1rem;
+	margin-bottom: 2.6rem;
 	position: relative;
 	text-align: center;
 	color: #252525;
@@ -1502,8 +1503,8 @@ a.menu-toggle {
 
 #stats {
 	background: #FFE71C;
-	padding-top: 7.2rem;
-	padding-bottom: 9rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -1517,6 +1518,11 @@ a.menu-toggle {
 }
 .stats-content p {
 	color: rgba(0, 0, 0, 0.8);
+}
+.stats-content img {
+	width: 50%;
+	height: 50%;
+	align-content: center;
 }
 .stats-content .stores {
 	margin: 0;
@@ -1550,14 +1556,6 @@ a.menu-toggle {
 	margin-right: 0;
 }
 
-.stats-content .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.stats-content .icon i {
-	font-size: 4.8rem;
-	color: black;
-}
 .stats-content .h05 {
 	font-size: 1.7rem;
 	line-height: 1.765;
@@ -1611,8 +1609,8 @@ a.menu-toggle {
 
 #process {
 	background: #FFFFFF;
-	padding-top: 12rem;
-	padding-bottom: 15rem;
+	padding-top: 7rem;
+	padding-bottom: 7rem;
 	overflow: hidden;
 }
 .process-content {
@@ -1732,8 +1730,8 @@ a.menu-toggle {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
+	padding-top: 7rem;
+	padding-bottom: 7rem;
 	color: white;
 }
 #features .section-intro h1 {
@@ -1798,169 +1796,113 @@ a.menu-toggle {
 
 /**
  * ===================================================================
- * pricing section
+ * call-to-action section
  *
  * -------------------------------------------------------------------
  */
 
-#pricing {
-	background: #EAEAED;
-	padding-top: 12rem;
-	padding-bottom: 9.6rem;
-}
-.pricing-content {
-	margin-top: 6.6rem;
-	max-width: 1280px;
-}
-.pricing-content .bgrid {
-	margin-bottom: 3.6rem;
-}
-.pricing-content .price-block {
-	background-color: #FFFFFF;
-	border-radius: 5px;
-	overflow: hidden;
+#cta {
+	background: #FFE71C;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
 	text-align: center;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-.pricing-content .price-block .top-part,
-.pricing-content .price-block .bottom-part {
-	padding: 3.9rem 1.5rem;
-}
-.pricing-content .price-block .top-part {
-	background: #58687b;
 	color: #FFFFFF;
-	padding-bottom: 2.4rem;
-	position: relative;
 }
-.pricing-content .price-block .bottom-part {
-	padding-top: 2.4rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
+.cta-content {
+	max-width: 740px;
+	margin: 0 auto;
 }
-.pricing-content .price-block .plan-title {
-	color: #FFFFFF;
-	padding-bottom: 2.4rem;
-	margin-bottom: 1.2rem;
-	font-size: 2.4rem;
-	position: relative;
-}
-.pricing-content .price-block .plan-title::after {
-	display: block;
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 80px;
-	height: 1px;
-	content: '\0020';
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -40px;
-}
-.pricing-content .price-block .plan-price {
-	font-family: "raleway-bold", sans-serif;
-	font-size: 5rem;
-	line-height: 1;
+.cta-content h1 {
+	color: #000000;
 	margin-bottom: .6rem;
 }
-.pricing-content .price-block .plan-price sup {
-	font-size: 2.4rem;
-	top: -1.5rem;
-	margin-right: 3px;
+.cta-content p {
+	color: rgba(0, 0, 0, 0.8);
 }
-.pricing-content .price-block .price-month {
-	margin-bottom: 1.2rem;
-	font-family: "raleway-bold", sans-serif;
-	font-size: 1.6rem;
-}
-.pricing-content .price-block .price-meta {
-	color: rgba(255, 255, 255, 0.5);
-	line-height: 1.8rem;
-}
-.pricing-content .price-block .button {
-	color: #353F49;
-	padding: 0 5rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-.pricing-content .price-block .button:hover,
-.pricing-content .price-block .button:focus {
-	background: #58687b;
-	color: #FFFFFF;
-}
-.pricing-content .price-block .features {
-	list-style: none;
-	font-family: "raleway-bold", sans-serif;
-	font-size: 1.5rem;
-	color: rgba(0, 0, 0, 0.4);
-	margin: .6rem 0 1.8rem 0;
-}
-.pricing-content .price-block .features li {
-	padding: .6rem 0;
-	border-bottom: 1px solid #EAEAED;
-}
-.pricing-content .price-block .features li strong {
-	color: #353F49;
-	font-family: "raleway-bold", serif;
-	margin-right: 5px;
-}
-.pricing-content .price-block .features li:last-child {
-	border: none;
-}
-.pricing-content .primary .top-part {
-	background: #FFE71C;
-}
-.pricing-content .primary .top-part::before {
-	content: attr(data-info);
+.cta-content .stores {
+	margin: 0;
+	padding: 0;
 	display: block;
-	min-height: 48px;
-	line-height: 48px;
-	width: 75%;
-	text-align: center;
-	color: #FFFFFF;
-	background: #38424e;
-	font-family: "raleway-heavy", sans-serif;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	letter-spacing: .15rem;
-	position: absolute;
-	bottom: -18px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-	z-index: 500;
-	border-radius: 5px;
 }
+.cta-content .stores li {
+	padding: 0;
+	display: inline-block;
+}
+.cta-content .stores li .button {
+	background: #535959;
+	color: #FFFFFF;
+	margin-right: 12px;
+	display: block;
+	line-height: 60px;
+}
+.cta-content .stores li .button:hover,
+.cta-content .stores li .button:focus {
+	background: #353a3a;
+}
+.cta-content .stores li .button i {
+	font-size: 18px;
+	line-height: inherit;
+	margin-right: 8px;
+}
+.cta-content .stores li .button i.ion-social-windows {
+	font-size: 15px;
+}
+.cta-content .stores li:last-child .button {
+	margin-right: 0;
+}
+
+.cta-content .icon {
+	display: inline-block;
+	margin-bottom: 2.1rem;
+}
+.cta-content .icon i {
+	font-size: 4.8rem;
+	color: black;
+}
+.cta-content .h05 {
+	font-size: 1.7rem;
+	line-height: 1.765;
+	color: #000000;
+	margin-bottom: 1.8rem;
+}
+
 
 /**
  * responsive:
- * pricing
+ * cta
  * -
  */
 
-@media only screen and (max-width:1140px) {
-	.pricing-content {
-		max-width: 800px;
+@media only screen and (max-width:650px) {
+	.cta-content {
+		max-width: 650px;
 	}
-	.pricing-content .bgrid {
-		width: 50%;
-		clear: none;
+	.cta-content .stores li {
+		display: block;
 	}
-	.pricing-content .bgrid:nth-child(2n+1) {
-		clear: both;
+	.cta-content .stores li .button {
+		width: 300px;
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-bottom: 1.8rem;
+	}
+	.cta-content .stores li .button::before {
+		display: none;
 	}
 }
 @media only screen and (max-width:600px) {
-	.pricing-content {
-		max-width: 420px;
-	}
-	.pricing-content .bgrid {
-		width: 100% !important;
-		float: none !important;
-		clear: both !important;
-		margin-left: 0;
-		margin-right: 0;
+	.cta-content .stores li .button {
+		width: 70%;
 	}
 }
+@media only screen and (max-width:400px) {
+	.cta-content .stores li .button {
+		width: 80%;
+	}
+}
+
+
 
 
 /**
@@ -1972,8 +1914,8 @@ a.menu-toggle {
 
 #testimonials {
 	background: #FFFFFF;
-	padding-top: 10.2rem;
-	padding-bottom: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 	position: relative;
 	min-height: 20.4rem;
 	width: 100%;
@@ -2250,144 +2192,6 @@ a.menu-toggle {
 @media only screen and (max-width:400px) {
 	.faq-content .bgrid {
 		padding: 0;
-	}
-}
-
-
-/**
- * ===================================================================
- * ad-section
- *
- * -------------------------------------------------------------------
- */
-
-.section-ads {
-	margin-top: 4.8rem;
-	padding-top: 6rem;
-	max-width: 650px;
-	border-top: 1px dotted rgba(0, 0, 0, 0.1);
-	text-align: center;
-}
-.section-ads h2 a, .section-ads h2 a:visited {
-	color: #252525;
-}
-.section-ads span {
-	color: #0087cc;
-}
-.section-ads .button {
-	background: #FFE71C;
-	color: #FFFFFF;
-}
-.section-ads .button:hover, .section-ads .button:focus {
-	background: #05ad9c;
-}
-
-
-/**
- * ===================================================================
- * call-to-action section
- *
- * -------------------------------------------------------------------
- */
-
-#cta {
-	background: #FFE71C;
-	padding-top: 7.2rem;
-	padding-bottom: 9rem;
-	text-align: center;
-	color: #FFFFFF;
-}
-.cta-content {
-	max-width: 740px;
-	margin: 0 auto;
-}
-.cta-content h1 {
-	color: #000000;
-	margin-bottom: .6rem;
-}
-.cta-content p {
-	color: rgba(0, 0, 0, 0.8);
-}
-.cta-content .stores {
-	margin: 0;
-	padding: 0;
-	display: block;
-}
-.cta-content .stores li {
-	padding: 0;
-	display: inline-block;
-}
-.cta-content .stores li .button {
-	background: #535959;
-	color: #FFFFFF;
-	margin-right: 12px;
-	display: block;
-	line-height: 60px;
-}
-.cta-content .stores li .button:hover,
-.cta-content .stores li .button:focus {
-	background: #353a3a;
-}
-.cta-content .stores li .button i {
-	font-size: 18px;
-	line-height: inherit;
-	margin-right: 8px;
-}
-.cta-content .stores li .button i.ion-social-windows {
-	font-size: 15px;
-}
-.cta-content .stores li:last-child .button {
-	margin-right: 0;
-}
-
-.cta-content .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.cta-content .icon i {
-	font-size: 4.8rem;
-	color: black;
-}
-.cta-content .h05 {
-	font-size: 1.7rem;
-	line-height: 1.765;
-	color: #000000;
-	margin-bottom: 1.8rem;
-}
-
-
-/**
- * responsive:
- * cta
- * -
- */
-
-@media only screen and (max-width:650px) {
-	.cta-content {
-		max-width: 650px;
-	}
-	.cta-content .stores li {
-		display: block;
-	}
-	.cta-content .stores li .button {
-		width: 300px;
-		display: block;
-		margin-left: auto !important;
-		margin-right: auto !important;
-		margin-bottom: 1.8rem;
-	}
-	.cta-content .stores li .button::before {
-		display: none;
-	}
-}
-@media only screen and (max-width:600px) {
-	.cta-content .stores li .button {
-		width: 70%;
-	}
-}
-@media only screen and (max-width:400px) {
-	.cta-content .stores li .button {
-		width: 80%;
 	}
 }
 
