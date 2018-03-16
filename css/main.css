@@ -1436,7 +1436,7 @@ a.menu-toggle {
 #about {
 	background: #FFFFFF;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 4rem;
 }
 #about .h01 {
 	padding-bottom: 3.1rem;
@@ -1914,8 +1914,8 @@ a.menu-toggle {
 
 #testimonials {
 	background: #FFFFFF;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
 	position: relative;
 	min-height: 20.4rem;
 	width: 100%;
@@ -2132,6 +2132,231 @@ a.menu-toggle {
 
 /**
  * ===================================================================
+ * testimonials2 section
+ *
+ * -------------------------------------------------------------------
+ */
+
+#testimonials2 {
+	background: #FFE71C;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	position: relative;
+	min-height: 20.4rem;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+#testimonials2 .h01 {
+	padding-bottom: 2.1rem;
+	margin-bottom: 3.6rem;
+	position: relative;
+	color: #252525;
+}
+#testimonials2 .h01::after {
+	display: block;
+	background-color: #FFE71C;
+	width: 120px;
+	height: 3px;
+	content: '\0020';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -60px;
+}
+#testimonials2 .flex-container {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+#testimonial2-slider {
+	margin: 0 0 3rem 0;
+	position: relative;
+}
+#testimonial2-slider p {
+	font-family: "raleway-medium", sans-serif;
+	font-size: 2.5rem;
+	line-height: 1.8;
+	color: #8d8d8d;
+}
+#testimonial2-slider p::before, #testimonial2-slider p::after {
+	display: inline;
+	font-family: Arial, sans-serif;
+	color: #c7c7c7;
+	font-size: 6rem;
+	line-height: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -1.2rem;
+}
+#testimonial2-slider p::before {
+	margin-right: .5rem;
+	content: '\201C';
+}
+#testimonial2-slider p::after {
+	margin-left: .5rem;
+	content: '\201D';
+}
+#testimonial2-slider .testimonial2-author img {
+	width: 8.2rem;
+	height: 8.2rem;
+	margin: 0 auto 1.2rem auto;
+	display: block;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 9px solid #EAEAED;
+}
+#testimonial2-slider .testimonial2-author .author-info {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "raleway-heavy", sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+	color: #252525;
+}
+#testimonial2-slider .testimonial2-author .author-info span {
+	display: block;
+	font-family: "raleway-semibold", sans-serif;
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	letter-spacing: 0;
+	text-transform: none;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/* control nav */
+#testimonials2 .flex-control-nav {
+	width: 100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	bottom: -42px;
+}
+#testimonials2 .flex-control-nav li {
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+}
+#testimonials2 .flex-control-paging li a {
+	width: 15px;
+	height: 15px;
+	display: block;
+	border: 4px solid #8d8d8d;
+	cursor: pointer;
+	border-radius: 50%;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+#testimonials2 .flex-control-paging li a:hover {
+	border: 4px solid #FFE71C;
+}
+#testimonials2 .flex-control-paging li a.flex-active {
+	background: #FFE71C;
+	border-color: #FFE71C;
+	cursor: default;
+}
+
+/* direction nav */
+#testimonials2 .flex-direction-nav li {
+	padding: 0;
+	z-index: 500;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: -57px;
+}
+#testimonials2 .flex-direction-nav li a {
+	display: block;
+	opacity: .8;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+#testimonials2 .flex-direction-nav li a.flex-prev::before,
+#testimonials2 .flex-direction-nav li a.flex-next::after {
+	display: block;
+	background: #EAEAED;
+	color: #737373;
+	border-radius: 5px;
+	font-family: "Ionicons";
+	font-size: 18px;
+	height: 48px;
+	width: 48px;
+	line-height: 48px;
+	text-align: center;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#testimonials2 .flex-direction-nav li a.flex-prev::before {
+	content: "\f2ca";
+}
+#testimonials2 .flex-direction-nav li a.flex-next::after {
+	content: "\f30f";
+}
+#testimonials2 .flex-direction-nav li a.flex-next:hover::after,
+#testimonials2 .flex-direction-nav li a.flex-prev:hover::before {
+	background: #FFE71C;
+	color: #FFFFFF;
+}
+#testimonials2 .flex-direction-nav li.flex-nav-prev {
+	left: 0;
+}
+#testimonials2 .flex-direction-nav li.flex-nav-next {
+	right: 0;
+}
+
+/**
+ * responsive:
+ * testimonial2 slider
+ * -
+ */
+
+@media only screen and (max-width:1024px) {
+	#testimonials2 .flex-container {
+		max-width: 600px;
+	}
+	#testimonial2-slider p {
+		font-size: 2.4rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	#testimonials2 .flex-container {
+		width: 90%;
+	}
+	#testimonial2-slider p {
+		font-size: 2.2rem;
+	}
+}
+@media only screen and (max-width:600px) {
+	#testimonials2 .flex-container {
+		width: 95%;
+	}
+	#testimonial2-slider p {
+		font-size: 2rem;
+	}
+	#testimonial2-slider p::before, #testimonial2-slider p::after {
+		top: -0.5rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	#testimonials2 .flex-container {
+		width: auto;
+	}
+	#testimonial2-slider p {
+		font-size: 1.8rem;
+	}
+}
+
+
+
+/**
+ * ===================================================================
  * faq section
  *
  * -------------------------------------------------------------------
@@ -2140,7 +2365,7 @@ a.menu-toggle {
 #faq {
 	background: #FFFFFF;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 5rem;
 }
 #faq .h01 {
 	padding-bottom: 2.1rem;
