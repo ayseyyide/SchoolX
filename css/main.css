@@ -2083,6 +2083,22 @@ a.menu-toggle {
 	}
 }
 
+#testimonials .column{
+	float:left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
+#testimonials .title{
+	color: black;
+}
+#testimonials::after, .row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
 
 
 /**
@@ -2266,6 +2282,25 @@ a.menu-toggle {
 	right: 0;
 }
 
+#testimonials2 .column{
+	float:left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+}
+
+#testimonials2 .title{
+	color: black;
+}
+#testimonials2::after, .row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+
+
 /**
  * responsive:
  * testimonial2 slider
@@ -2347,11 +2382,19 @@ a.menu-toggle {
 .faq-content .bgrid {
 	padding: 0 30px;
 }
-.faq-content img {
-	width: 50%;
-	height: 50%;
-	align-content: center;
+
+#faq .column{
+	float:left;
+	width: 25%;
+	margin-bottom: 16px;
+	padding: 0 8px;
 }
+#faq::after, .row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
 
 /**
  * responsive:
