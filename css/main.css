@@ -1468,6 +1468,11 @@ a.menu-toggle {
 	height: 50%;
 	align-content: center;
 }
+#about .column{
+	float:left;
+	width: 50%;
+	padding: 5px;
+}
 
 /**
  * responsive:
@@ -2082,6 +2087,15 @@ a.menu-toggle {
 		font-size: 1.8rem;
 	}
 }
+@media screen and (max-width:650px) {
+	#testimonials .flex-container {
+		width: auto;
+	}
+	#testimonial-slider .column {
+		width: 100%;
+		display: block;
+	}
+}
 
 #testimonials .column{
 	float:left;
@@ -2098,6 +2112,7 @@ a.menu-toggle {
 	clear: both;
 	display: table;
 }
+
 
 
 
