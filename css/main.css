@@ -2420,12 +2420,21 @@ a.menu-toggle {
 	width: 25%;
 	margin-bottom: 16px;
 	padding: 0 8px;
+<<<<<<< HEAD
+}
+#faq::after, .row::after{
+	content: "";
+	clear: both;
+	display: table;
+=======
+>>>>>>> 87b8971c5a3ed63cd271988e7b1d602b5c407c43
 }
 #faq::after, .row::after{
 	content: "";
 	clear: both;
 	display: table;
 }
+
 
 
 /**
