@@ -55,10 +55,30 @@
 </head>
 
 <body id="top">
+	
+		<div id="privacy-pop-up" style="display:none; position:fixed; z-index:9999; bottom:0; left:0; right:0; background:#000; color:#fff; margin:1em; padding:0.5em; text-align:center;  "><br>
+  <strong>Important information regarding cookies</strong><br>
+  By using this website, you consent to the use of cookies in accordance with our
+  <a href="privacy-policy.html" style="text-decoration: underline; color:#fff">Privacy Policy</a>.<br><br>
+  <a  id="exit-popup" style="background:#fff; color:#000; padding:0.25em 0.5em; margin:0.5em; cursor:pointer; font-weight:bold; font-size:90%;  ">
+  Understood, hide this message</a><br><br>
+</div>
+<script>
+    jQuery(document).ready(function() {
+        if(localStorage.getItem('pc234978') != '923847'){
+            jQuery("#privacy-pop-up").delay(1).fadeIn(1000);
+            localStorage.setItem('pc234978','923847');
+        } else { console.log("2 " + "returning"); }
+        jQuery('#exit-popup').click(function(e) // You are clicking the close button
+        {
+            jQuery('#privacy-pop-up').fadeOut(1000); // Now the pop up is hiden.
+        });
+    });
+</script>
 
 	<!-- header
    ================================================== -->
-
+  
 	<header style="background-color: black; padding-top:15px; margin-top: -24px;">
 
    	<div class="row">
@@ -69,7 +89,7 @@
 
 		<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-
+					
 					<li><a class="smoothscroll" style="font-family: 'Oswald', sans-serif; font-size: 1.1em;" href="#about_detail" title="">What is SchoolX</a></li>
                     <li><a class="smoothscroll" style="font-family: 'Oswald', sans-serif; font-size: 1.1em;" href="#process" title="">How it Works</a></li>
 					<li><a class="smoothscroll" style="font-family: 'Oswald', sans-serif; font-size: 1.1em;" href="#faq" title="">FAQ</a></li>
@@ -80,13 +100,13 @@
 			</nav>
 
 			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
+		
    	</div>
 
    </header> <!-- /header -->
-
-
-
+	
+	
+	
 
    <!-- intro section
      ================================================== -->
@@ -114,7 +134,7 @@
            Schoolx is an online platform that provides quality education to out-of-school children and youth worldwide. Using optimized algorithms, Schoolx oversees a robust educational system that connects trained local and refugee teachers to students, runs micro-classes and tracks students progress. 
          </br>
 		 		    	<p style="text-align: center">
-		     		<a class="button button-primary  smoothscroll" style="color:black; width: 50%;" href="#faq">Frequently Asked Questions</a></p>
+		     		<a class="button button-primary  smoothscroll" style="color:black; width: 50%;" href="#faq">FAQ</a></p>
          </p>
 		 </div><div class="col-six">
            <img src="images/kids.jpg" style="float: right; margin-right: 2%; margin-bottom: 0.5em;">
@@ -131,7 +151,7 @@
   <section id="stats">
 
           <div class="row stats-content">
-
+            
 			  <div class="col-four">
               <img src="images/stats1.png" width="50%" height="50%" style="float: center; width: 90%; margin-right: 2%; margin-bottom: 0.5em;">
 			  </div>
@@ -253,18 +273,18 @@
 
        </div>
 </div>
-     </div>
-
-
+     </div> 
+	   
+	   
 	   	   <div class="col-four">
 
      <div class="new-image-bb">  <img style="width: 85%;" src="images/appdesign.jpg">  </div>
 
 	   </div>
-
-
-
-
+	   
+	   
+	   
+	   
 	   <div class="col-four">
 	   <!-- /left-side -->
 
@@ -290,11 +310,11 @@
  <!-- /process-content --> </div>
 
   </section> <!-- /process-->
+	
 
-
-
+	
 	<section id="faq">
-
+		
 			        <div class="row section-intro">
           <div class="col-twelve with-bottom-line">
 
@@ -304,13 +324,13 @@
 
           </div>
         </div>
-
-
+		
+		
 	<div  class="row">
 	<div style="background-color: #fff;" class="container ">
 	<div class="panel-group" id="faqAccordion">
-
-
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
                  <h4 class="panel-title">
@@ -326,8 +346,8 @@
                 </div>
             </div>
         </div>
-
-
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
                  <h4 class="panel-title">
@@ -342,8 +362,8 @@
                 </div>
             </div>
         </div>
-
-
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
                  <h4 class="panel-title">
@@ -358,16 +378,16 @@
                 </div>
             </div>
         </div>
-
-
-
+			
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
                  <h4 class="panel-title">
                     <a href="#faq" style="font-family: 'Bree Serif', serif; font-weight:400;" class="ing">Q: What will the volunteers do after they have received necessary training?</a>
               </h4>
             </div>
-
+			
             <div id="question3" class="panel-collapse collapse" style="height: 0px;">
                 <div class="panel-body">
                      <h5 style="margin-bottom: 10px; font-family: 'Bree Serif', serif; font-weight:400;"><span style="background-color: yellow; color: black; font-family: 'Bree Serif', serif; font-weight:400;" class="label label-primary">Answer</span></h5>
@@ -376,7 +396,7 @@
                 </div>
             </div>
         </div>
-
+		
 		        <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
                  <h4 class="panel-title">
@@ -392,8 +412,8 @@
                 </div>
             </div>
         </div>
-
-
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
                  <h4 class="panel-title">
@@ -408,8 +428,8 @@
                 </div>
             </div>
         </div>
-
-
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
                  <h4 class="panel-title">
@@ -424,16 +444,16 @@
                 </div>
             </div>
         </div>
-
-
-
+			
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question7">
                  <h4 class="panel-title">
                     <a href="#faq" style="font-family: 'Bree Serif', serif; font-weight:400;" class="ing">Q: Can college graduates participate in Schoolx?</a>
               </h4>
             </div>
-
+			
             <div id="question7" class="panel-collapse collapse" style="height: 0px;">
                 <div class="panel-body">
                      <h5 style="margin-bottom: 10px; font-family: 'Bree Serif', serif; font-weight:400;"><span style="background-color: yellow; color: black; font-family: 'Bree Serif', serif; font-weight:400;" class="label label-primary">Answer</span></h5>
@@ -442,8 +462,8 @@
                 </div>
             </div>
         </div>
-
-
+			
+		
 		        <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question8">
                  <h4 class="panel-title">
@@ -458,8 +478,8 @@
                 </div>
             </div>
         </div>
-
-
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question9">
                  <h4 class="panel-title">
@@ -474,16 +494,16 @@
                 </div>
             </div>
         </div>
-
-
-
+			
+			
+			
         <div class="panel panel-default ">
             <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question10">
                  <h4 class="panel-title">
                     <a href="#faq" style="font-family: 'Bree Serif', serif; font-weight:400;" class="ing">Q: Who is in charge of organising and running Schoolx?</a>
               </h4>
             </div>
-
+			
             <div id="question10" class="panel-collapse collapse" style="height: 0px;">
                 <div class="panel-body">
                      <h5 style="margin-bottom: 10px; font-family: 'Bree Serif', serif; font-weight:400;"><span style="background-color: yellow; color: black; font-family: 'Bree Serif', serif; font-weight:400;" class="label label-primary">Answer</span></h5>
@@ -492,15 +512,15 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
 		</div>
              </div><!--/panel-group-->
-
-
+	
+	
 	</section>
-
-
+	
+	
 
 
    <!-- footer
@@ -523,7 +543,7 @@
 
 		      </div> <!-- /footer-info -->
 
-	      	<div class="col-six tab-1-3 mob-full footer-subscribe align-center">
+	      	<div class="col-six tab-1-3 mob-full footer-subscribe">
 
 	      		<h4 style="font-family: 'Bree Serif', serif; font-weight:400;">Subscribe</h4>
 
@@ -540,6 +560,11 @@
 		   				<label for="mc-email" class="subscribe-message"></label>
 
 						</form>
+					
+										<div class="form-check">
+  <input class="form-check-input" style="float:left;" type="checkbox" value="" id="defaultCheck1"><label class="form-check-label" style="float:left;" for="defaultCheck1">&nbsp;&nbsp;I wish to receive emails about SchoolX updates.
+  </label>
+</div>
 
 	      		</div>
 
@@ -557,6 +582,7 @@
       		<div class="col-twelve">
 	      		<div class="copyright">
 		         	<span style="font-family: 'Bree Serif', serif; font-weight:400;">© Copyright SchoolX 2018.</span>
+										<span style="font-family: 'Bree Serif', serif; font-weight:400;"><a href="privacy-policy.html">Privacy &amp; Policy</a></span>
 		         	<span style="font-family: 'Bree Serif', serif; font-weight:400;">Design by <a href="http://www.styleshout.com/">styleshout</a></span>
 		         </div>
 

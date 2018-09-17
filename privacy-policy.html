@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>SchoolX</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	
+	
+
+	
+  <!-- bootstrap
+ ================================================== -->
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/forms.css">
+   <link href="https://fonts.googleapis.com/css?family=Bree+Serif&amp;subset=latin-ext" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Oswald:600&amp;subset=latin-ext" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">
+	
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+  <script type="text/javascript">
+  jQuery.fn.center = function() {
+    this.css("position", "absolute");
+    // Use This line On 'Short Page Content'
+    this.css("left", ($(window).width() - (this.width()+18)) / 2 + $(window).scrollLeft() + "px");
+    // Use This line On 'Long Page Content'
+    this.css("left", ($(window).width() - (this.width())) / 2 + $(window).scrollLeft() + "px");
+    return this;
+  }
+  $(document).ready(function() {
+    $('#wrap').css("visibility", "visible");
+  });
+</script>
+
+   <!-- favicons
+	=======================================*=========== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+	
+	<div id="privacy-pop-up" style="display:none; position:fixed; z-index:9999; bottom:0; left:0; right:0; background:#000; color:#fff; margin:1em; padding:0.5em; text-align:center;  "><br>
+  <strong>Important information regarding cookies</strong><br>
+  By using this website, you consent to the use of cookies in accordance with our
+  <a href="privacy-policy.html" style="text-decoration: underline; color:#fff">Privacy Policy</a>.<br><br>
+  <a  id="exit-popup" style="background:#fff; color:#000; padding:0.25em 0.5em; margin:0.5em; cursor:pointer; font-weight:bold; font-size:90%;  ">
+  Understood, hide this message</a><br><br>
+</div>
+<script>
+    jQuery(document).ready(function() {
+        if(localStorage.getItem('pc234978') != '923847'){
+            jQuery("#privacy-pop-up").delay(1).fadeIn(1000);
+            localStorage.setItem('pc234978','923847');
+        } else { console.log("2 " + "returning"); }
+        jQuery('#exit-popup').click(function(e) // You are clicking the close button
+        {
+            jQuery('#privacy-pop-up').fadeOut(1000); // Now the pop up is hiden.
+        });
+    });
+</script>
+
+	<!-- header
+   ================================================== -->
+   <header style="background-color: black; padding-top:15px; margin-top: -24px;">
+
+   	<div class="row">
+
+   		<div style="margin-left:-30px; background-color: black;" class="logo">
+	         <a href="index.html">SchoolX</a>
+	      </div>
+		<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+					<li class="with-sep"><a style="font-size: 0.9em; font-family: 'Oswald', sans-serif;" href="get-involved.html" title="">EN</a></li>
+					<li ><a style="font-size: 0.9em; font-family: 'Oswald', sans-serif;"  href="#" title="">TR</a></li>
+				</ul>
+			</nav>
+   	</div>
+
+   </header> <!-- /header -->
+
+   <!-- intro section
+     ================================================== -->
+
+
+     <!-- About Us Section
+     ================================================== -->
+     <section id="about_detail">
+
+
+     	<div class="row faq-content">
+<div style="margin-top:90px;" class="col-twelve tab-full">
+
+    
+	<h1 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">Schoolx Privacy Policy</h1></br></br>
+
+    <h2 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">Cookie policy</h2></br>
+		   
+	<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">Websites use cookies to distinguish you from other users of the website.  This helps us to provide you with a good experience when you browse our website and also allows us to improve the website.</br></br>
+<span style="color: #000;">Currently, the Schoolx website does not use any cookies as it is still in its development stage. When the website is fully developed, cookies policy explained below applies.</span> </br></br>
+<span style="font-weight:600;"> By continuing to browse the website, you are agreeing to our use of cookies as set out by this policy.</span> </p></br></br>
+	
+    <h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">1. Information about cookies</h3></br>
+
+    <p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">A cookie is a small file of letters and numbers that, if you agree to their use, is stored on your browser or the hard drive of your computer or device.  They contain information that is transferred to your hard drive.
+The cookies that we could use can be split into the following categories:</br></br>
+•	<span style="font-weight:600;">Necessary cookies.</span> These are cookies that are required for the operation of the website.  They include, for example, cookies that enable you to log into parts of the website.</br></br>
+•	<span style="font-weight:600;">Analytical cookies.</span> These cookies allow us to recognise and count the number of visitors to the website and to see how they move around within the website when they are using it.  This helps us to improve the way the website works, for example, by ensuring that users are finding what they are looking for easily.</br></br>
+•	<span style="font-weight:600;">Third party cookies.</span> These are used to third parties (such as Google) to enable their services to work, for example Google Captcha on forms or Google Maps. Some third parties use their cookies for advertising purposes. We have no control over these cookies and provide a link to the third party’s privacy policy, where you may have the option to opt-out of their data collection.</p></br></br>
+
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">2. The cookies we use</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">We use the following cookies:</p></br></br>
+	
+	
+	
+	<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">CATEGORY</th>
+      <th scope="col">COOKIE NAME</th>
+      <th scope="col">PURPOSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Necessary Cookies</td>
+      <td>cookiesAccepted</td>
+      <td>Necessary cookies enable core functionality. The website cannot function properly without these cookies, and can only be disabled by changing your browser preferences.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Necessary Cookies</td>
+      <td>PHPSESSID</td>
+      <td>Necessary cookies enable core functionality. The website cannot function properly without these cookies, and can only be disabled by changing your browser preferences.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Necessary Cookies</td>
+      <td>cookiesAcceptedGoogle</td>
+      <td>Necessary cookies enable core functionality. The website cannot function properly without these cookies, and can only be disabled by changing your browser preferences.</td>
+    </tr>
+	  <tr>
+      <th scope="row">4</th>
+      <td>Analytical
+
+cookies</td>
+		  <td>'_ga', '_gat_gtag_UA_1893933-1', '_gid'</td>
+      <td>Analytical cookies for us to better craft the user experience based on your page view experiences.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</br></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">Please note that third parties (including, for example, advertising networks and providers of external services like web traffic analysis services) may also use cookies, over which we have no control.  These cookies are likely to be analytical/performance cookies or targeting cookies.</p></br></br>
+	
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">3. How you can block cookies</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">You can block cookies by activating the setting on your browser that allows you to refuse the setting of all or some cookies.</br></br>
+However, please be aware that blocking cookies may affect your ability to use the website.  In particular, you may not be able to access all or parts of the website or use the functionalities contained on it.</p></br></br>
+ 
+<h2 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">Privacy policy</h2></br></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;"><span style="font-weight:600;">Schoolx (we) are committed to protecting and respecting your privacy.</span></br></br>
+This policy, together with any other documents referred to in it, sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.  Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it.</br></br>
+By visiting this website, you are accepting and consenting to the practices described in this policy.</br></br>
+Our nominated representative for the purpose of the Data Protection Act 1998 (Act), is Ahmed Shamso.</p></br></br>
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">1. Information we collect from you</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">We will collect and process the following categories of data about you:</br></br>
+•	<span style="font-weight:600;">Information you give us.</span> This is information about you that you give us by filling in forms on the website (Site), interacting with the Site or by corresponding with us by phone, e-mail or otherwise.  It includes information you provide when you sign up to our newsletter service, make an enquiry about our products and services or log a support ticket.</br></br>
+The information you give us will include your name, address, e-mail address and phone number, as well as preliminary information about your education level, and location preferences for classes commencement.</br></br>
+•	<span style="font-weight:600;">Information we collect about you. </span>This is information that we collect automatically about your visit during your time on the Site.  It typically involves technical information and is often collected using small data files called “cookies”.  This information helps us to provide you with a good experience when you browse the Site and also to indicate where the Site requires improvement.</br></br>
+More information on how cookies work, what cookies we use and why can be found in our Cookie Policy (see above).</br></br>
+•	<span style="font-weight:600;">Information we receive from other sources.</span> This is information that we receive about you if you use any of the other websites we operate.  In this case we will have informed you when we collected that data if we intend to share those data internally.  We will also have told you for what purpose we will share your data.
+This also includes information that we receive from third parties, such as business partners, sub-contractors in technical services, advertising networks, analytics providers, search information providers and so on.  We will notify you when we receive information about you from them and the purposes for which we intend to use that information.</br></br>
+<span style="font-weight:600;">Social Media platforms</span></br>
+We operate social media platforms. These platforms are, in most cases, operated outside of the EU and do not comply with current Data Privacy Act and subsequent GDPR provision although they may well conform to the U.S Privacy Shield protocol.</br></br>
+It is our process and protocol that any personally identifiable data gathered on these platforms is only in response to users interacting out of their own volition with our marketing pages. The contact is deemed as a legitimate business enquiry. The personal contact data is removed from the site once the enquiry is processed or the user has requested so.</br></br>
+<span style="font-weight:600;">Analytics</span></br>
+Our website uses Google Analytics to collect information about how visitors use our website. We anonymise this data at the point of collection and automatically delete user and event data that is older than two years.</p></br></br>
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">2. Uses made of the information</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">All information about you that we collect or receive, whether of a personal or technical nature, may be used by us in the following ways:</br></br>
+•	To carry out our obligations arising from any contracts entered into between you and us and to provide you with the information, products and services that you request from us;</br></br>
+•	To provide you with information about other goods and services that we, or our selected partners, offer that are similar or relevant to those that you have already purchased or enquired about, such contact will only be made by email or phone from which you can opt out at any time; To notify you about changes to our services;</br></br>
+•	To administer the Site and for internal operations, including troubleshooting, system and security updates, data analysis, testing, research, statistical and survey purposes;</br></br>
+•	To improve the Site to ensure that content is presented in the most effective manner for you and for your computer;</br></br>
+•	To allow you to participate in interactive features of our service, when you choose to do so;</br></br>
+•	As part of our efforts to keep the Site safe and secure;</br></br>
+•	To measure or understand the effectiveness of advertising we serve to you and others, and to deliver relevant advertising to you; and</br></br>
+•	To comply with our record keeping and information storage obligations and policy (please see the “Where We Store Your Personal Data” section below for more details).</br></br>
+<span style="font-weight:600;">Information we receive from other sources. </span> We will combine this information with information you give to us and information we collect about you.  We will use this information and the combined information for the purposes set out above (depending on the types of information we receive).</p></br></br>
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">3. Disclosure of your information</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">We may share your information with:</br></br>
+•	Any member of our group, which means our subsidiaries, our ultimate holding company and its subsidiaries, as defined in section 1159 of the UK Companies Act 2006;</br></br>
+•	Business partners, suppliers and sub-contractors for the performance of any contract we enter into with them or you;</br></br>
+•	Analytics and search engine providers that assist us in the improvement and optimisation of the Site;</br></br>
+•	Third party support services, such as, but not limited to project management tools, accounting systems and hosting data centre.</br></br>
+
+We will disclose your personal information to third parties:</br>
+•	In the event that we sell or buy any business or assets, in which case we will disclose your personal data to the prospective seller or buyer of such business or assets;</br></br>
+•	If we, or substantially all of our assets, are acquired by a third party, in which case personal data held by us about our clients will be one of the transferred assets;</br></br>
+•	If we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our terms of use and other agreements; or</br></br>
+•	To protect our rights, property or safety, or those of our clients or others.</p></br></br>
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">4. Where we store your personal data</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">All information that you provide to us is stored on our, or our selected business partners’, secure servers, and we will take reasonable steps to protect your information in accordance with this policy, including (without limitation):</br></br>
+•	Installing a secure firewall;</br></br>
+•	Using anti-virus protection software;</br></br>
+•	Encrypting data; and</br></br>
+•	Carrying out regular back-ups.</br></br>
+All data sent via website forms is passed through a third party relay service and deleted after 30 days.</br></br>
+Unfortunately, the transmission of information via the internet is not completely secure.  Although we will do our best to protect your personal data, we cannot guarantee the security of any data transmitted to the Site; and any such transmission is at your own risk.  Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.</p></br></br>
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">5. Your rights</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">You have the following rights under law in respect of your personal information:</br></br>
+•	The right to be informed about the collection and use of your personal information;</br></br>
+•	The right of access to your information to verify the legality of our use of it;</br></br>
+•	The right to request that inaccurate or incomplete information about you is rectified;</br></br>
+•	The right to request the deletion or removal of your information where there is no further reason for us to use it (such as you have withdrawn your consent or we no longer provide your children with education);</br></br>
+•	The right to restrict the use of your information;</br></br>
+•	The right to obtain and reuse the information that we have about you for your own purposes;</br></br>
+•	The right to object to certain uses (such as for marketing purposes); and</br></br>
+•	The right not to be subject to a decision that has a legal effect on you that has been based on an automated decision.</br></br>
+Should you wish to exercise any of these rights, you may do so at any time by writing to us at the address given below.  In some cases, we are permitted to charge a small fee of no more than £10 in respect of our administrative costs.</br></br>
+If you would like to request the information we hold about you under a <span style="font-weight:600;">Subject Access Request (“SAR”)</span> you can download the application <a href="schoolxdataenguiryform.pdf">template here.</a></br></br>
+If you feel that your rights have been breached in any way, you should contact Ahmed Shamso at the address given above or lodge an official complaint with the Information Commissioner’s Office via their website (<a href="https://ico.org.uk">https://ico.org.uk</a>) or by writing to: Information Commissioner’s Office, Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF.</br></br>
+The Site may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates.  If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies.  Please check these policies before you submit any personal data to these websites.</p></br></br>
+
+<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">6. Changes to our privacy policy</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">Any changes we make to our privacy policy in the future will be posted on this page.  Please check back frequently to see any updates or changes to our privacy policy.</p></br></br>
+
+	<h3 style="font-family: 'Bree Serif', serif; font-weight:400; color: #000;">7. Contact</h3></br>
+<p style="font-family: 'Bree Serif', serif; font-weight:400; font-size: 17px;">Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to Ahmed Shamso at 
+	<a href="mailto:shamso@schoolx.co">shamso@schoolx.co</a></p></br></br>
+   		</div>
+     	</div><!-- /faq-content -->
+
+
+     </section> <!-- /Partners -->
+
+ 
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	<div class="footer-main">
+
+   		<div class="row">
+
+	      	<div class="col-six tab-full mob-full footer-info align-center">
+            <center>
+	            <div class="footer-logo"></div>
+            </center>
+	            <p style="font-family: 'Bree Serif', serif; font-weight:400;">
+		        	Enterprise Lab, Imperial College London<br>
+            	SW7 2AZ London, UK<br>
+
+		        	</p>
+
+		      </div> <!-- /footer-info -->
+
+	      	<div class="col-six tab-1-3 mob-full footer-subscribe">
+
+	      		<h4 style="font-family: 'Bree Serif', serif; font-weight:400;">Subscribe</h4>
+
+	      		<p style="font-family: 'Bree Serif', serif; font-weight:400;">Keep yourself updated. Subscribe to our newsletter.</p>
+
+	      		<div class="subscribe-form">
+
+	      			<form id="mc-form" class="group" novalidate="true">
+
+							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required="">
+
+			   			<input type="submit" name="subscribe" >
+
+		   				<label for="mc-email" class="subscribe-message"></label>
+
+						</form>
+										<div class="form-check">
+  <input class="form-check-input" style="float:left;" type="checkbox" value="" id="defaultCheck1"><label class="form-check-label" style="float:left;" for="defaultCheck1">&nbsp;&nbsp;I wish to receive emails about SchoolX updates.
+  </label>
+</div>
+
+	      		</div>
+
+	      	</div> <!-- /subscribe -->
+
+	      </div> <!-- /row -->
+
+   	</div> <!-- /footer-main -->
+
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span style="font-family: 'Bree Serif', serif; font-weight:400;">© Copyright SchoolX 2018.</span>
+					<span style="font-family: 'Bree Serif', serif; font-weight:400;"><a href="privacy-policy.html">Privacy &amp; Policy</a></span>
+		         	<span style="font-family: 'Bree Serif', serif; font-weight:400;">Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+					
+		         </div>
+
+		         <div id="go-top" style="display: block;">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+		         </div>
+	      	</div>
+
+      	</div> <!-- /footer-bottom -->
+
+      </div>
+
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+
+</body>
+
+<link rel="stylesheet" type="text/css" href="data:text/css,">
